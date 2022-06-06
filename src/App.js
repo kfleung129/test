@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './NavBar.js'
+import Main from './Main.js'
+import { Box } from '@mui/material'
+import { Route } from 'react-router'
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box sx={{height: window.innerHeight, backgroundColor: '#55BEFF', position: 'fixed', width: '100%'}}>
+      <NavBar/>
+      <Route path='/' component={Main}>
+        
+      </Route>
+    </Box>
   );
 }
 
