@@ -9,9 +9,7 @@ function App() {
   return (
     <Box sx={{height: window.innerHeight, backgroundColor: '#55BEFF', position: 'fixed', width: '100%'}}>
       <NavBar/>
-      <Route path='/' component={Main}>
-        
-      </Route>
+      <Main/>
     </Box>
   );
 }
